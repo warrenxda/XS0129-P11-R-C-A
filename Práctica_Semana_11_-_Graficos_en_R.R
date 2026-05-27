@@ -164,10 +164,13 @@ hist(airquality$Ozone,
 
 # >>> ESCRIBA SU CODIGO AQUI:
 
+boxplot(Temp ~ Month, data = airquality
+        , col = "lightblue",
+        main = "Temperatura según el mes")
 
-
-# Comentario 1.3: ______________________________________________________________
-
+# Comentario 1.3: a partir del mes 5 (mayo), la temperatura de los meses tiende a subir
+# alcanzando el punto máximo en el mes 7 y 8 (julio y agosto) para luego descender
+# en el mes 9 (septiembre)
 
 
 # ------------------------------------------------------------------------------
@@ -216,10 +219,20 @@ pie(valores,
 #    IMPORTANTE: agregue ese .png al .gitignore (vea la Parte 5) para NO
 #    versionar imagenes generadas automaticamente.
 
+
 # >>> ESCRIBA SU CODIGO AQUI:
 
 
+png("grafico_exportado.png")
+hist(airquality$Temp, col = "salmon", main = "Histograma de Temp", xlab = "Temperatura")
+dev.off() # Cierra el archivo PNG para que se guarde en tu carpeta
 
+par(mfrow = c(1, 2))
+
+hist(airquality$Temp, col = "salmon", main = "Histograma de Temp", xlab = "Temperatura")
+plot(cars$speed, cars$dist, col = "darkblue", main = "Dispersión Cars", xlab = "Velocidad", ylab = "Distancia")
+
+par(mfrow = c(1,1))
 # ==============================================================================
 # PARTE 2 - GRAFICOS CON ggplot2  (20 puntos)
 # ==============================================================================
@@ -280,6 +293,15 @@ ggplot(airquality, aes(x = Temp, y = Ozone, colour = factor(Month))) +
 
 # >>> ESCRIBA SU CODIGO AQUI:
 
+ggplot(airquality, aes(x = Temp, y = Ozone, colour = factor(Month))) +
+  geom_point(shape = 19) +
+  labs(
+    title = "Relacion entre temperatura y ozono por mes",
+    x = "Temperatura",
+    y = "Nivel de ozono"
+  ) +
+  geom_smooth(method = "lm", se = FALSE, color = "black") + 
+  facet_wrap(~ Month)
 
 
 # ------------------------------------------------------------------------------
@@ -342,7 +364,9 @@ library(maps)
 
 # >>> ESCRIBA SU CODIGO AQUI:
 
+map(database = "world", col = "gray90", fill = TRUE)
 
+map("world", regions = "Costa Rica", fill = TRUE, col = "lightgreen")
 
 # ------------------------------------------------------------------------------
 # Ejercicio 3.2  MAPA POLIGONAL CON ggplot2  (5 pts)  [Resp.: Integrante A]
