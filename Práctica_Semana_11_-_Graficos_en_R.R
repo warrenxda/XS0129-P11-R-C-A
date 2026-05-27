@@ -236,7 +236,12 @@ library(ggplot2)
 # ahora con ggplot2 y geom_point().
 
 # >>> ESCRIBA SU CODIGO AQUI:
-
+ggplot(airquality, aes(x = Temp, y = Ozone)) +
+  geom_point(shape = 19) +
+  labs(
+    title = "Relacion entre temperatura y ozono",
+    x = "Temperatura",
+    y = "Nivel de ozono")
 
 
 # ------------------------------------------------------------------------------
@@ -272,7 +277,12 @@ library(ggplot2)
 # de Sepal.Length por especie (Species). Use stat = "summary", fun = "mean".
 
 # >>> ESCRIBA SU CODIGO AQUI:
-
+ggplot(iris, aes(x = Species, y = Sepal.Length)) +
+  geom_bar(stat = "summary", fun = "mean") +
+  labs(
+    title = "Promedio de Sepal.Length por especie",
+    x = "Especie",
+    y = "Promedio de Sepal.Lengt")
 
 
 # ------------------------------------------------------------------------------
