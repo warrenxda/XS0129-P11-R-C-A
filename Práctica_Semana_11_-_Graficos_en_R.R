@@ -20,7 +20,7 @@
 # ------------------------------------------------------------------------------
 # Integrante A: Caroline Camille Rodrigiez Q  Carne: C4J173  GitHub: cam77rq
 # Integrante B: Warren Chaves Castillo  Carne: C4E262  GitHub: warrenxda
-# Integrante C: ______________________  Carne: __________  GitHub: ____________
+# Integrante C: José Gabriel Acuña Almengor  Carne: C4C055  GitHub: GabrielAA-gp
 #               (deje en blanco si el grupo es de dos personas)
 #
 # ------------------------------------------------------------------------------
