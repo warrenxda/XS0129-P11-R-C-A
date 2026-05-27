@@ -458,9 +458,9 @@ ggplot(region, aes(long, lat, group = group)) +
 #     - wordcloud     : nubes de palabras.
 #     - lattice       : sistema de graficos alternativo (graficos en celosia).
 #
-# Libreria elegida: ____________________________________________________________
+# Libreria elegida: ggthemes
 # Justifiquen en una o dos lineas por que la eligieron:
-#   ___________________________________________________________________________
+#   Nos parece intersante el nivel de detalle que puede ofrecer
 #
 # ------------------------------------------------------------------------------
 # 4.2  FICHA DE DOCUMENTACION  (6 pts)             [Responsable: Integrante B]
@@ -469,19 +469,19 @@ ggplot(region, aes(long, lat, group = group)) +
 # COMPLETEN la siguiente ficha como comentarios. Indiquen las fuentes.
 #
 #   a) Nombre del paquete y autor(es) principales:
-#      Paquete: tmap. Autor(es): Martijn Tennekes
+#      Paquete: ggthemes. Autor(es): Jeffrey B. Arnold
 #   b) Para que tipo de visualizaciones se utiliza:
-#      Se utiliza principalmente cuando hay datos sobre la poblacion de un lugar
+#      Para mejorar la apariencia de los graficos 
 #   c) Funcion(es) principal(es) del paquete y que hace cada una:
-#      tm_shape para definir los datos, tm_borders para devolver los bordes
-#      de los lugares, tm_text para asignar etiquetas
+#      theme_excel() para devolver graficos sobre informes corporativos,
+#      theme_solarized() ayuda a reducir la fatiga visual, y theme_tufte()
+#      para eliminar elementos innecesarios
 #   d) Una ventaja y una limitacion frente al paquete base o ggplot2:
-#      Ventaja:    Cuando hay datos suficientes, el grafico es mas preciso en lo que 
-#                  quiere dar a entender
-#      Limitacion: Se requiere de varias o muchas variables para usar el paquete
+#      Ventaja:    Permite mejorar la presentación de los graficos
+#      Limitacion: Su alcance se ve muy limitado ya que solo aporta mejora estétecia 
 #   e) Fuentes consultadas (al menos dos, con su enlace):
-#      1) r-graph-gallery. https://r-graph-gallery.com/package/tmap.html
-#      2) r-tmap.github. https://r-tmap.github.io/tmap/
+#      1) jrnold.github. https://jrnold.github.io/ggthemes/
+#      2) github. https://github.com/jrnold/ggthemes
 #
 # ------------------------------------------------------------------------------
 # 4.3  EJEMPLO APLICADO  (8 pts)                   [Responsable: TODO EL GRUPO]
@@ -495,8 +495,8 @@ ggplot(region, aes(long, lat, group = group)) +
 # en una rama compartida (por ejemplo 'feature/parte4') y resuelvan en conjunto
 # cualquier conflicto de fusion que aparezca.
 
-# install.packages("__________")   # escriba aqui el nombre de su libreria
-# library(__________)
+# install.packages("iris")   # escriba aqui el nombre de su libreria
+# library(iris)
 
 # >>> ESCRIBA SU CODIGO AQUI:
 
