@@ -469,17 +469,19 @@ ggplot(region, aes(long, lat, group = group)) +
 # COMPLETEN la siguiente ficha como comentarios. Indiquen las fuentes.
 #
 #   a) Nombre del paquete y autor(es) principales:
-#      _________________________________________________________________________
+#      Paquete: tmap. Autor(es): Martijn Tennekes
 #   b) Para que tipo de visualizaciones se utiliza:
-#      _________________________________________________________________________
+#      Se utiliza principalmente cuando hay datos sobre la poblacion de un lugar
 #   c) Funcion(es) principal(es) del paquete y que hace cada una:
-#      _________________________________________________________________________
+#      tm_shape para definir los datos, tm_borders para devolver los bordes
+#      de los lugares, tm_text para asignar etiquetas
 #   d) Una ventaja y una limitacion frente al paquete base o ggplot2:
-#      Ventaja:    ______________________________________________________________
-#      Limitacion: ______________________________________________________________
+#      Ventaja:    Cuando hay datos suficientes, el grafico es mas preciso en lo que 
+#                  quiere dar a entender
+#      Limitacion: Se requiere de varias o muchas variables para usar el paquete
 #   e) Fuentes consultadas (al menos dos, con su enlace):
-#      1) _______________________________________________________________________
-#      2) _______________________________________________________________________
+#      1) r-graph-gallery. https://r-graph-gallery.com/package/tmap.html
+#      2) r-tmap.github. https://r-tmap.github.io/tmap/
 #
 # ------------------------------------------------------------------------------
 # 4.3  EJEMPLO APLICADO  (8 pts)                   [Responsable: TODO EL GRUPO]
