@@ -509,8 +509,8 @@ ggplot(mtcars, aes(x = factor(cyl),
        x = "Número de cilindros",
        y = "Millas por galón (mpg)",
       fill = "Cilindros") +
-  theme_excel() +
-  scale_fill_economist()
+  theme_classic() +
+  scale_fill_excel()
 
 # ------------------------------------------------------------------------------
 # 4.4  COMPARACION Y REFLEXION  (4 pts)            [Responsable: Integrante C]
@@ -519,14 +519,24 @@ ggplot(mtcars, aes(x = factor(cyl),
 # usando el paquete base o ggplot2. Luego responda en comentarios:
 #
 #   a) Que diferencias noto en la cantidad y claridad del codigo:
-#      _________________________________________________________________________
+#      En general, el contenido se mantiene, sin embargo, el paquete ayuda
+#      a que el grafico se vea mas estetico, segun lo que se ocupe
 #   b) En que situacion recomendaria usar la libreria investigada y en cual
 #      preferiria el paquete base o ggplot2:
-#      _________________________________________________________________________
+#      Recomendaríamos utilizar el paquete cuando el grafico esta dirigido a un
+#      publico al cual no este acostumbrado a graficos con poca informacion y/o tengan
+#      alguna dificultad para leer graficos
 
 # >>> ESCRIBA AQUI EL GRAFICO EQUIVALENTE CON BASE O ggplot2:
-
-
+ggplot(mtcars, aes(x = factor(cyl),
+                   y = mpg,
+                   fill = factor(cyl))) +
+  geom_boxplot(alpha = 0.8) +
+  labs(title = "Consumo de combustible según número de cilindros",
+       x = "Número de cilindros",
+       y = "Millas por galón (mpg)",
+       fill = "Cilindros") +
+  scale_fill_manual(values = c(4,6,8))
 
 # ==============================================================================
 # PARTE 5 - TRABAJO COLABORATIVO CON GIT Y GITHUB  (15 puntos)
