@@ -172,10 +172,14 @@ barplot(airquality$Wind,
 # airquality$Ozone (eje Y). Use pch = 19 y describa la relacion observada.
 
 # >>> ESCRIBA SU CODIGO AQUI:
+plot(airquality$Temp, airquality$Ozone,
+     main = "Relacion entre temperatura y ozono",
+     xlab = "Temperatura",
+     ylab = "Nivel de ozono", pch = 19)
 
 
-
-# Comentario 1.4: ______________________________________________________________
+# Comentario 1.4: Se observa una relacion positiva, cuando la temperatura aumenta,
+# los niveles de ozono tienden a aumentar tambien.
 
 
 
