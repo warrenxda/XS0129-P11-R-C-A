@@ -233,7 +233,6 @@ hist(airquality$Temp, col = "salmon", main = "Histograma de Temp", xlab = "Tempe
 plot(cars$speed, cars$dist, col = "darkblue", main = "Dispersión Cars", xlab = "Velocidad", ylab = "Distancia")
 
 
-
 # ==============================================================================
 # PARTE 2 - GRAFICOS CON ggplot2  (20 puntos)
 # ==============================================================================
@@ -295,6 +294,7 @@ ggplot(airquality, aes(x = Temp, y = Ozone, colour = factor(Month))) +
 #   - un facet_wrap(~ Month) para separar un panel por mes.
 
 # >>> ESCRIBA SU CODIGO AQUI:
+
 
 
 
