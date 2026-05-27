@@ -399,8 +399,27 @@ ggplot(region, aes(long, lat, group = group)) +
 # Pista: San Jose, Costa Rica  ->  long = -84.09, lat = 9.93
 
 # >>> ESCRIBA SU CODIGO AQUI:
+#mapa anterior:
+region = map_data("world", region = "Costa Rica")
+ggplot(region, aes(long, lat, group = group)) + 
+  geom_polygon(fill = "pink", color = "black") +
+  coord_quickmap() +
+  labs(
+    title = "Mapa de Costa Rica",
+    x = "Longitud",
+    y = "Latitud"
+  )
 
-
+#mapa con lugares conocidos:
+region <- map_data("world", region = "Costa Rica")
+ggplot(region, aes(long, lat, group = group)) + 
+  geom_polygon(fill = "pink", color = "black") +
+  coord_quickmap() +
+  labs(
+    title = "Mapa de Costa Rica",
+    x = "Longitud",
+    y = "Latitud"
+  ) + geom_point(aes(x = -83.45, y = 9.2)) + geom_text(aes(x = -83.49, y = 9.1, label = 'Hogar'))
 
 # ==============================================================================
 # PARTE 4 - INVESTIGACION: OTRAS LIBRERIAS DE GRAFICOS EN R  (20 puntos)
