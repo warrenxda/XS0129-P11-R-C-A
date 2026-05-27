@@ -339,7 +339,15 @@ library(maps)
 #       geom_polygon(...) + coord_quickmap()
 
 # >>> ESCRIBA SU CODIGO AQUI:
-
+region <- map_data("world", region = "Costa Rica")
+ggplot(region, aes(long, lat, group = group)) + 
+  geom_polygon(fill = "pink", color = "black") +
+  coord_quickmap() +
+  labs(
+    title = "Mapa de Costa Rica",
+    x = "Longitud",
+    y = "Latitud"
+  )
 
 
 # ------------------------------------------------------------------------------
