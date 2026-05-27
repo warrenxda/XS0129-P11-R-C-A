@@ -495,12 +495,22 @@ ggplot(region, aes(long, lat, group = group)) +
 # en una rama compartida (por ejemplo 'feature/parte4') y resuelvan en conjunto
 # cualquier conflicto de fusion que aparezca.
 
-# install.packages("iris")   # escriba aqui el nombre de su libreria
-# library(iris)
+# install.packages("mtcars")   # escriba aqui el nombre de su libreria
+# library(mtcars)
 
 # >>> ESCRIBA SU CODIGO AQUI:
+library(ggthemes)
 
-
+ggplot(mtcars, aes(x = factor(cyl), 
+                   y = mpg,
+                   fill = factor(cyl))) +
+  geom_boxplot(alpha = 0.8) +
+  labs(title = "Consumo de combustible según número de cilindros",
+       x = "Número de cilindros",
+       y = "Millas por galón (mpg)",
+      fill = "Cilindros") +
+  theme_excel() +
+  scale_fill_economist()
 
 # ------------------------------------------------------------------------------
 # 4.4  COMPARACION Y REFLEXION  (4 pts)            [Responsable: Integrante C]
