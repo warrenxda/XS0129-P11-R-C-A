@@ -266,8 +266,6 @@ ggplot(airquality, aes(x = Temp, y = Ozone, colour = factor(Month))) +
     x = "Temperatura",
     y = "Nivel de ozono")
 
-#Consultar a Cami
-
 # Comentario 2.2: Agregar un color a cada mes en el grafico ayuda a identificar a 
 #                 caracteristicas de los valores en el grafico, como lo puede ser una tendencia.
 
