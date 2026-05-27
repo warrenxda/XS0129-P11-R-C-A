@@ -232,7 +232,7 @@ par(mfrow = c(1, 2))
 hist(airquality$Temp, col = "salmon", main = "Histograma de Temp", xlab = "Temperatura")
 plot(cars$speed, cars$dist, col = "darkblue", main = "Dispersión Cars", xlab = "Velocidad", ylab = "Distancia")
 
-
+par(mfrow = c(1,1))
 # ==============================================================================
 # PARTE 2 - GRAFICOS CON ggplot2  (20 puntos)
 # ==============================================================================
@@ -293,7 +293,15 @@ ggplot(airquality, aes(x = Temp, y = Ozone, colour = factor(Month))) +
 
 # >>> ESCRIBA SU CODIGO AQUI:
 
-
+ggplot(airquality, aes(x = Temp, y = Ozone, colour = factor(Month))) +
+  geom_point(shape = 19) +
+  labs(
+    title = "Relacion entre temperatura y ozono por mes",
+    x = "Temperatura",
+    y = "Nivel de ozono"
+  ) +
+  geom_smooth(method = "lm", se = FALSE, color = "black") + 
+  facet_wrap(~ Month)
 
 
 # ------------------------------------------------------------------------------
@@ -338,7 +346,9 @@ library(maps)
 
 # >>> ESCRIBA SU CODIGO AQUI:
 
+map(database = "world", col = "gray90", fill = TRUE)
 
+map("world", regions = "Costa Rica", fill = TRUE, col = "lightgreen")
 
 # ------------------------------------------------------------------------------
 # Ejercicio 3.2  MAPA POLIGONAL CON ggplot2  (5 pts)  [Resp.: Integrante A]
