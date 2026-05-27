@@ -197,8 +197,15 @@ plot(airquality$Temp, airquality$Ozone,
 # Pista: table(mtcars$cyl) y construya las etiquetas con paste0() y round().
 
 # >>> ESCRIBA SU CODIGO AQUI:
+valores = table(mtcars$cyl)
+categorias = c('4 cilindros ','6 cilindros ','8 cilindros ')
+prtcj = round(valores/sum(valores)*100)
+categorias = paste0(categorias, prtcj)
+categorias = paste0(categorias, '%', sep = '')
 
-
+#Grafico:
+pie(valores,
+    labels = categorias)
 
 # ------------------------------------------------------------------------------
 # Ejercicio 1.6  MULTIPLES GRAFICOS Y EXPORTACION  (5 pts)  [Resp.: Integrante C]
