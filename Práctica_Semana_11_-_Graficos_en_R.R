@@ -336,7 +336,7 @@ ggplot(airquality, aes(x = Temp, y = Ozone, colour = factor(Month))) +
     x = "Temperatura",
     y = "Nivel de ozono")
 
-#Grafico:
+#Grafico detallado:
 ggplot(airquality, aes(x = Temp, y = Ozone, colour = factor(Month))) +
   geom_point(shape = 19) +
   labs(
