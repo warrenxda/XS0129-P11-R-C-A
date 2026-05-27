@@ -18,7 +18,7 @@
 # ------------------------------------------------------------------------------
 # DATOS DEL GRUPO
 # ------------------------------------------------------------------------------
-# Integrante A: ______________________  Carne: __________  GitHub: ____________
+# Integrante A: Caroline Camille Rodrigiez Q  Carne: C4J173  GitHub: cam77rq
 # Integrante B: Warren Chaves Castillo  Carne: C4E262  GitHub: warrenxda
 # Integrante C: ______________________  Carne: __________  GitHub: ____________
 #               (deje en blanco si el grupo es de dos personas)
