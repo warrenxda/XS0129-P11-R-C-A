@@ -266,8 +266,6 @@ ggplot(airquality, aes(x = Temp, y = Ozone, colour = factor(Month))) +
     x = "Temperatura",
     y = "Nivel de ozono")
 
-#Consultar a Cami
-
 # Comentario 2.2: Agregar un color a cada mes en el grafico ayuda a identificar a 
 #                 caracteristicas de los valores en el grafico, como lo puede ser una tendencia.
 
@@ -308,7 +306,26 @@ ggplot(iris, aes(x = Species, y = Sepal.Length)) +
 
 # >>> ESCRIBA SU CODIGO AQUI:
 
+#Grafico elegido
+ggplot(airquality, aes(x = Temp, y = Ozone, colour = factor(Month))) +
+  geom_point(shape = 19) +
+  labs(
+    title = "Relacion entre temperatura y ozono",
+    x = "Temperatura",
+    y = "Nivel de ozono")
 
+#Grafico:
+ggplot(airquality, aes(x = Temp, y = Ozone, colour = factor(Month))) +
+  geom_point(shape = 19) +
+  labs(
+    title = "Relacion entre temperatura y ozono",
+    x = "Temperatura",
+    y = "Nivel de ozono") + 
+  labs(title = 'Relacion entre Temperatura y Nivel de Ozono',
+                                 subtitle = 'Relacion entre Temperatura y Niveles de Ozono por mes',
+                                 caption = 'Fuente: DataSet Airquality') + 
+  theme_classic() + 
+  scale_color_manual(values = c(5,6,7,8,9))
 
 # ==============================================================================
 # PARTE 3 - GRAFICOS CON MAPAS  (15 puntos)
