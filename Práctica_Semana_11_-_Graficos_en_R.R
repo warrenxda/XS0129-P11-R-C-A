@@ -324,8 +324,7 @@ ggplot(airquality, aes(x = Temp, y = Ozone, colour = factor(Month))) +
   labs(title = 'Relacion entre Temperatura y Nivel de Ozono',
                                  subtitle = 'Relacion entre Temperatura y Niveles de Ozono por mes',
                                  caption = 'Fuente: DataSet Airquality') + 
-  theme_classic() + 
-  scale_color_manual(values = c(5,6,7,8,9))
+  theme_classic() + scale_color_manual(values = c(5,6,7,8,9))
 
 # ==============================================================================
 # PARTE 3 - GRAFICOS CON MAPAS  (15 puntos)
