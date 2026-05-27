@@ -95,14 +95,22 @@ data("iris")
 data("ToothGrowth")
 
 # >>> ESCRIBA SU CODIGO AQUI: use str() y summary() sobre airquality y mtcars.
+rm(list = ls())
+data("airquality")
+data("mtcars")
+data("iris")
+data("ToothGrowth")
 
+str(airquality)
+str(mtcars)
 
+summary(airquality)
+summary(mtcars)
 
 # 0.2  En un comentario, indiquen cuantas observaciones y cuantas variables
 #      tiene 'airquality' y mencionen si contiene valores faltantes (NA).
 #
-# Respuesta 0.2: _______________________________________________________________
-
+# Respuesta 0.2: En airquality hay 153 obervaciones y 6 variables. Además, hay valores faltantes NA
 
 
 # ==============================================================================
