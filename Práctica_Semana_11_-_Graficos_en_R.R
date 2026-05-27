@@ -143,11 +143,16 @@ barplot(airquality$Wind,
 # COMENTE como cambia la interpretacion al variar el numero de clases.
 
 # >>> ESCRIBA SU CODIGO AQUI:
+hist(airquality$Ozone,
+     breaks = 5)
 
+hist(airquality$Ozone,
+     breaks = 15)
 
-
-# Comentario 1.2: ______________________________________________________________
-
+# Comentario 1.2: Al aumentar el valor de breaks, los intervalos/clases para los valores son más
+#                 pequenos, lo que implica que, a mayor cantidad de breaks, el gráfico va a
+#                 tender a parecerse más a la estructura original de los datos, de lo contrario,
+#                 los datos se acumulan intervalos más grandes, alejándose de su estructura original
 
 
 # ------------------------------------------------------------------------------
