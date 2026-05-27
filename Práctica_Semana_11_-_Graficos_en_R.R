@@ -129,7 +129,10 @@ summary(mtcars)
 # Asignele un titulo, una etiqueta de eje y un color de su eleccion.
 
 # >>> ESCRIBA SU CODIGO AQUI:
-
+barplot(airquality$Wind,
+        main = "Velocidad del viento",
+        ylab = "Wind",
+        col = "skyblue")
 
 
 # ------------------------------------------------------------------------------
